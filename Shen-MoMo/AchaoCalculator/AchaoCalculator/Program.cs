@@ -32,9 +32,9 @@ namespace AchaoCalculator
                                      rd.Next(1, 100),
                                      rd.Next(1, 100) };
             //初始化四个随机数
-            int[] operation = new int[3] { 3, 3, 3 };/*{ rd.Next(0, 3),
+            int[] operation = new int[3] { rd.Next(0, 3),
                                            rd.Next(0, 3),
-                                           rd.Next(0, 3) };*/
+                                           rd.Next(0, 3) };
             //初始化三个运算符
             int count = rd.Next(1, 3);
             //初始化运算符个数
