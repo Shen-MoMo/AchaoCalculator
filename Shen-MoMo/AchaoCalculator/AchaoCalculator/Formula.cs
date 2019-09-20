@@ -13,8 +13,7 @@ namespace AchaoCalculator
             string formula = "";
             byte[] buffer = Guid.NewGuid().ToByteArray();//生成字节数组
             int iRoot = BitConverter.ToInt32(buffer, 0);//利用BitConvert方法把字节数组转换为整数
-            Random rdmNum = new Random(iRoot);//以这个生成的整数为种子
-            Random rd = new Random(iRoot);
+            Random rd = new Random(iRoot); //以这个生成的整数为种子
             int[] num = new int[4] { rd.Next(1, 100),
                                      rd.Next(1, 100),
                                      rd.Next(1, 100),
